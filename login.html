@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet"href="login.css">
+    <link rel="stylesheet"href="form.css">
+    <head>
+        <title>Online Food Order</title>
+    </head>
+            <body bgcolor="lightgray">
+                <table bgcolor="lightblue" width="100%">
+                    <tr>
+                        <th><img src="13.jpg" align="left" width="150" height="100"></th>
+                        <th align="center"> <h2>Delicious Food Restaurant</h2></th>
+                    </tr>
+                 </table>
+                 <table bgcolor="gray" width="100%">
+                    <tr>
+                        <th><div>
+                            <marquee behavior="" direction="left"><p>First Order 50% Off </p>  </marquee>
+                        </div></th>
+                    </tr>
+                 </table>
+                  <div >
+                    <img src="14.jpg" align="left" height="5%" width="65%">
+                  </div>
+    
+            </head>
+            <body>
+                <div class="login-container">
+                    <h3> <center>Login</center></h3><br>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="username">Username:</label>
+                            <input type="email" id="username" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" onclick="login()">Login</button>
+                        </div>
+                    </form>
+                    
+                </div>
+                <script>
+                    function login(){
+                       var name= document.getElementById('name').value;
+                       var email= document.getElementById('username').value;
+                       var pass=document.getElementById('password').value;
+                       if(name=='sugandha' && email=='inf.sugandha@gmail.com' && pass=='12345'){
+                        window.location.assign("MainPage.html")
+                       }
+                       else{
+                        alert('Wrong Entry Invalid')
+                       }
+
+                    }
+                </script>
+                  <div class="footer">
+                    <div class="footerb">
+                   <b>Quick Link</b><br><br>
+                     Home<br>
+                     About<br>
+                     Menu<br>
+                     Order<br>
+                     Contact
+                    </div>
+                    <div class="footerb"> <b>Menu</b><br><br>
+                        Veg Thali<br>
+                        Non Veg Thali<br>
+                        Soup<br>
+                        Sweets<br>
+                        Fast Food</div>
+                    <div class="footerb"> <b>Address</b><br><br>
+                        Address:<br>
+                       Near BSS Collage , Supaul ,Bihar<br>
+                        Email: inf.sugandha@gmail.com<br>
+                        Mobile: 9142620394<br>
+                        Time: 08:00 AM to 08:00  PM</div>
+                    <div class="footerb">
+                        <b>Direction</b><br><br>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.004391684221!2d86.60262027415405!3d26.131399793232386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ee42434d7d2b4f%3A0x5afc4de20576237a!2sBSS%20College%2C%20Supaul!5e0!3m2!1sen!2sin!4v1690732879804!5m2!1sen!2sin" width="300" height="140" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                 </div>
+             
+                </body>
+</html>
